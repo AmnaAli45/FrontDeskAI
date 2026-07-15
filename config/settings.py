@@ -27,6 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+SALON_NAME = "Beauty Buzz"
+SALON_WHATSAPP_NUMBER = "+92300..."
+
 
 # Application definition
 
