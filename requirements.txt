@@ -6,3 +6,5 @@ langchain-community
 python-dotenv
 tavily-python
 pydantic
+django
+djangorestframework
