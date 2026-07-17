@@ -84,6 +84,14 @@ DATABASES = {
     }
 }
 
+SALON_INFO = {
+    "name": "Glow Salon",
+    "address": "Main Boulevard, Faisalabad",
+    "working_hours": "Monday-Saturday: 9:00 AM - 8:00 PM, Sunday: Closed",
+    "phone": "+92 300 1234567",
+    "policies": "Cancellations must be made at least 2 hours before the appointment.",
+}
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
