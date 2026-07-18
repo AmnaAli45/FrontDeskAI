@@ -85,7 +85,7 @@ DATABASES = {
 }
 
 SALON_INFO = {
-    "name": "Glow Salon",
+    "name": "Beauty Buzz",
     "address": "Main Boulevard, Faisalabad",
     "working_hours": "Monday-Saturday: 9:00 AM - 8:00 PM, Sunday: Closed",
     "phone": "+92 300 1234567",
