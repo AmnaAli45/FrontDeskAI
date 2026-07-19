@@ -1,5 +1,5 @@
 # ---------------------------------- Message Classification Prompt --------------------------------------------------------------
-message_classification_prompt = f"""You are an intent classifier for a clinic/salon WhatsApp receptionist agent.
+message_classification_prompt = """You are an intent classifier for a clinic/salon WhatsApp receptionist agent.
     Classify the customer's NEW message into EXACTLY ONE of these categories:
 
     - booking: customer wants to schedule a NEW appointment
@@ -15,7 +15,7 @@ message_classification_prompt = f"""You are an intent classifier for a clinic/sa
     just because it's short.
 
     Recent conversation history:
-    {history_text or "No previous messages"}
+    {history_text}
 
     Rules:
     - If the message mixes a greeting with a request, classify by the request.

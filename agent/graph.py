@@ -14,7 +14,7 @@ from agent.tools import (
     looks_like_malformed_tool_call, parse_malformed_tool_call, notify_staff
 )
 from agent.prompts import (
-    MESSAGE_CLASSIFICATION_PROMPT_TEMPLATE, BOOKING_SYSTEM_PROMPT,
+    message_classification_prompt, BOOKING_SYSTEM_PROMPT,
     RESCHEDULE_SYSTEM_PROMPT, FAQ_SYSTEM_PROMPT,
     ESCALATE_CLASSIFY_PROMPT, GREETING_RESPONSE_PROMPT
 )
@@ -95,7 +95,7 @@ def run_tool_calling_loop(bound_model, tool_map, messages, max_iterations=5):
 def message_classification_node(state: State) -> State:
     message = state["usr_msg"]
     history_text = "\n".join(f"{t['role']}: {t['content']}" for t in state.get("history", [])[-4:]) or "None"
-    prompt = MESSAGE_CLASSIFICATION_PROMPT_TEMPLATE.format(history_text=history_text, message=message)
+    prompt = message_classification_prompt.format(history_text=history_text, message=message)
 
     try:
         result = structured_model.invoke([SystemMessage(content=prompt), HumanMessage(content=message)])

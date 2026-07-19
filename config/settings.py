@@ -31,7 +31,7 @@ SECRET_KEY = 'django-insecure-^0gvxltz^(%^0g$kx)#^=mfy^uu!bc)oyev#$=462((o3nfcy*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 SALON_NAME = "Beauty Buzz"
 SALON_WHATSAPP_NUMBER = "+92300..."
